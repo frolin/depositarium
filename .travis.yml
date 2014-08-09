@@ -13,7 +13,7 @@ deploy:
   provider: heroku
   api_key:
     secure: Cas1Z4Tqm/I3CJjK1QfFvY2aXqjwKq+GKs5PsB5wIYVmvWTZcJV0VmenDRFKZvIDp7fjd7j6zOVZehVOO6n4jeONit1SewSaeMGLFPZ6gqi6xGE1dKKhpQtFeJAPEuiMeuK0GRpn9bgM+36Vn6V02fH35ntaGSSmld5KrKFXlD8=
-  app: depositarium
+  app: kappa-prj
   on:
     repo: frolin/depositarium
     branch: dev
