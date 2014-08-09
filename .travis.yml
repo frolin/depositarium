@@ -9,12 +9,11 @@ script:
 before_script:
 - cp config/database.yml.travis config/database.yml
 - psql -c 'create database travis_depositarium_test;' -U postgres
-
-
 deploy:
   provider: heroku
   api_key:
-    secure:
-  app:
-    dev: dev-depos
-    master: depos
+    secure: Cas1Z4Tqm/I3CJjK1QfFvY2aXqjwKq+GKs5PsB5wIYVmvWTZcJV0VmenDRFKZvIDp7fjd7j6zOVZehVOO6n4jeONit1SewSaeMGLFPZ6gqi6xGE1dKKhpQtFeJAPEuiMeuK0GRpn9bgM+36Vn6V02fH35ntaGSSmld5KrKFXlD8=
+  app: depositarium
+  on:
+    repo: frolin/depositarium
+    branch: dev
