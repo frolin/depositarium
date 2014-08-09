@@ -15,4 +15,8 @@
 /log/*.log
 /tmp
 
+#ignore RubyMine
+/.idea
+
+#Ignore Database
 config/database.yml
