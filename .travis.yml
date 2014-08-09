@@ -1,7 +1,9 @@
 language: ruby
 rvm:
 - 2.1.0
-cache: -apt -bundler
+cache: 
+ -apt 
+ -bundler
 env: -DB=postgresql
 script:
 - RAILS_ENV=test bundle exec rake db:migrate --trace
